@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
       .bg-body-tertiary {
-        background-color: #ffffff !important;
+        background-color: #66D2CE !important; /* Light teal */
       }
       @media (min-width: 992px) {
         .carousel-item img {
@@ -24,10 +24,12 @@
       }
       footer {
         background-color: #000000; /* Set footer background color to black */
-        color: #ffffff; /* Set footer text color to white */
+        color: #FFFFFF; /* Set footer text color to white */
+        padding: 1rem 0;
+        text-align: center;
       }
       .social-icons a {
-        color: #ffffff; /* Set social icon color to white */
+        color: #FFFFFF; /* Set social icon color to white */
         margin: 0 10px;
         font-size: 1.5rem;
       }
@@ -37,7 +39,22 @@
       }
       .scrolling-wrapper .card {
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 50px;
+      }
+      .scrolling-wrapper .card img {
+        height: 100px; /* Set the height of the images to 100px */
+        object-fit: cover; /* Ensure the images cover the area */
+      }
+      .btn-primary {
+        background-color: #2DAA9E; /* Teal */
+        border-color: #2DAA9E; /* Teal */
+      }
+      .btn-primary:hover {
+        background-color: #24907E; /* Darker teal */
+        border-color: #24907E; /* Darker teal */
+      }
+      body {
+        background-color: #EAEAEA; /* Light gray */
       }
     </style>
   </head>
@@ -54,7 +71,7 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -64,9 +81,8 @@
                   <li><a class="dropdown-item" href="#">Add to location</a></li>
                   <li><a class="dropdown-item" href="#">update a location</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Change password</a></li>
-                  <li><a class="dropdown-item" href="#">Change email</a></li>
-                  <li><a class="dropdown-item" href="#">update a location</a></li>
+                  <li><a class="dropdown-item" href="change_password.html">Change password</a></li>
+                  <li><a class="dropdown-item" href="change_email.html">Change email</a></li>
                   <li><a class="dropdown-item" href="loging.html">Loging</a></li>
 
                 </ul>
